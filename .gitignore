@@ -16,5 +16,9 @@
 .prettierignore
 
 design
-
-.code
+.code-workspace
+node_modules
+.json
+package.json
+package-lock.json
+design.md

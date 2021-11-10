@@ -1,0 +1,10 @@
+@use '../utilities/colors.scss' as *;
+
+.body {
+    background-color: $PaleBlue;
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-position:top left;  
+    background-size:contain;
+    background-repeat: no-repeat;
+
+}

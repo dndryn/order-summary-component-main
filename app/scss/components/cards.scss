@@ -1,0 +1,68 @@
+@use '../utilities/' as *;
+@use '../utilities/colors.scss' as clr;
+@use '../base/' as *;
+@use '../utilities/functions.scss' as func;
+@use '../base/typography.scss' as typo;
+
+
+
+
+.card {
+    margin: auto auto;
+    width: 450px;
+    height: 697px;
+    border-radius: 1rem 1rem 1rem 1rem;
+    background-color: white;
+    margin-top: func.rem(103);
+    margin-bottom: func.rem(103);
+
+    box-shadow: 0 1.5rem 3rem -2.5rem $DesaturatedBlue;
+
+    &__hero {
+        border-radius: 1rem 1rem 0 0;
+        width: auto;
+        height: rem(220);
+    }
+    &__title {
+        color: clr.$DarkBlue;
+        &--normal {
+            font-size: rem(16);
+        }
+        &--big {
+            font-size: rem(29);
+            padding-bottom: func.rem(16);
+        }
+    }
+    &__paragraph {
+        font-size: 1rem;
+        line-height: func.rem(24);
+        color: clr.$DesaturatedBlue;
+        &--center {
+            text-align: center;
+        }
+    }
+    &__link {
+        color: clr.$BrightBlue;
+        &:active {
+            color: clr.$DesaturatedBlue;
+        }
+    }
+    &__plan {
+        background-color: clr.$VeryPaleBlue;
+        border-radius: 1rem;
+    }
+    &__icon {
+        border-radius: 100%;
+        background-color: clr.$PaleBlue;
+    }
+    &__info {
+        height: 100%;
+    }
+}
+
+.plan {
+    &__container {
+        width: func.rem(237);
+        height: 100%;
+    }
+}

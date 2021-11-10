@@ -1,0 +1,42 @@
+@use '../utilities/functions.scss' as func;
+
+.content {
+    margin: auto auto;
+    width: func.rem(293);
+    height: func.rem(120);
+    //padding: 1rem;
+    text-align: center;
+    &--plan {
+        width: func.rem(305);
+        height: func.rem(48);
+        border-radius: func.rem(16);
+    }
+    &--main {
+        width: func.rem(293);
+        height: func.rem(120);
+    }
+}
+.container {
+    &--main {
+        width: func.rem(354);
+        height: func.rem(120); // before. 165
+        justify-content: center;
+        padding-top: func.rem(45);
+        padding-bottom: func.rem(10);
+
+    }
+    &--plan {
+        width: func.rem(354);
+        height: func.rem(100);
+    }
+    &--buttons {
+        width: func.rem(354);
+        padding-top: func.rem(14);
+    }
+    &--att {
+        width: func.rem(354);
+        height: auto; 
+        margin: func.rem(45) auto func.rem(10) auto;
+    }
+
+}

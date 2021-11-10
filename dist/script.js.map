@@ -1,0 +1,1 @@
+{"version":3,"sources":["script.js"],"names":["message","console","log"],"mappings":"AAAA,aAAA,IAAMA,QAAU,mBAChBC,QAAQC,IAAIF","file":"script.js","sourcesContent":["const message = 'Hello everybody!';\r\nconsole.log(message);"]}

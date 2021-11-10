@@ -1,0 +1,5 @@
+@use "sass:math";
+// SomeRule: rem(30pixel) = 30 / 16
+@function rem($pixels, $context: 16) {
+    @return($pixels / $context) * 1rem;
+}

@@ -1,0 +1,12 @@
+@use '../utilities/functions.scss' as func;
+@use '../utilities/colors.scss' as clr;
+
+
+.attribution {
+    font-family: 'Azeret Mono', monospace;
+    font-size: func.rem(10);
+    text-align: center;
+    &__link {
+        color: clr.$dndryn;
+    }
+}
