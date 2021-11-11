@@ -27,12 +27,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./images/screenshot.png)
+![](https://dndryn.github.io/order-summary-component-main/images/screenshot.png)
 
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/dndryn/order-summary-component-main)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://dndryn.github.io/order-summary-component-main/)
 
 
 ### Built with
