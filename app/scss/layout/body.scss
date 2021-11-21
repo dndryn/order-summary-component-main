@@ -1,4 +1,5 @@
 @use '../utilities/colors.scss' as *;
+@use '../utilities/mixins.scss' as mix;
 
 .body {
     background-color: $PaleBlue;
@@ -7,4 +8,7 @@
     background-size:contain;
     background-repeat: no-repeat;
 
+    @include mix.breakpoint-down(small) {
+        width: 100vw;
+    }
 }

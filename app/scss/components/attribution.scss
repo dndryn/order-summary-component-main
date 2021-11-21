@@ -6,6 +6,7 @@
     font-family: 'Azeret Mono', monospace;
     font-size: func.rem(10);
     text-align: center;
+    width: 100vw;
     &__link {
         color: clr.$dndryn;
     }

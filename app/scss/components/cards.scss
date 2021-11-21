@@ -3,6 +3,7 @@
 @use '../base/' as *;
 @use '../utilities/functions.scss' as func;
 @use '../base/typography.scss' as typo;
+@use '../utilities/mixins.scss' as mix;
 
 
 
@@ -15,30 +16,53 @@
     background-color: white;
     margin-top: func.rem(103);
     margin-bottom: func.rem(103);
-
     box-shadow: 0 1.5rem 3rem -2.5rem $DesaturatedBlue;
+
+    @include mix.breakpoint-down(small) {
+        width: rem(327); //87.2%;
+        height: rem(567);
+    }
+
+
 
     &__hero {
         border-radius: 1rem 1rem 0 0;
         width: auto;
         height: rem(220);
+        @include mix.breakpoint-down(small) {
+        width: auto;
+        height: rem(160);
+    }
     }
     &__title {
         color: clr.$DarkBlue;
         &--normal {
             font-size: rem(16);
+            @include mix.breakpoint-down(small) {
+            font-size: rem(15);
+            }
         }
         &--big {
             font-size: rem(29);
             padding-bottom: func.rem(16);
+
+            @include mix.breakpoint-down(small) {
+            font-size: rem(21);
+            }
         }
     }
     &__paragraph {
         font-size: 1rem;
         line-height: func.rem(24);
         color: clr.$DesaturatedBlue;
+        @include mix.breakpoint-down(small) {
+            font-size: rem(15);
+            }
         &--center {
             text-align: center;
+            @include mix.breakpoint-down(small) {
+            font-size: rem(16);
+            }
         }
     }
     &__link {
@@ -46,10 +70,18 @@
         &:active {
             color: clr.$DesaturatedBlue;
         }
+        @include mix.breakpoint-down(small) {
+            font-size: rem(13);
+            }
     }
     &__plan {
         background-color: clr.$VeryPaleBlue;
         border-radius: 1rem;
+
+         @include mix.breakpoint-down(small) {
+
+        width: 72.4%;
+    }
     }
     &__icon {
         border-radius: 100%;
@@ -64,5 +96,9 @@
     &__container {
         width: func.rem(237);
         height: 100%;
+
+        @include mix.breakpoint-down(small) {
+        width: 72.4%;
+    }
     }
 }

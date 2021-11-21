@@ -1,4 +1,5 @@
 @use '../utilities/functions.scss' as func;
+@use '../utilities/mixins.scss' as mix;
 
 * {
     margin: 0;
@@ -22,6 +23,9 @@
         gap: func.rem(23);
         justify-content: flex-start;
         align-items: center;
+        @include mix.breakpoint-down(small) {
+        gap: func.rem(15);
+        }
     }
     &--buttons {
         flex-flow: column nowrap;

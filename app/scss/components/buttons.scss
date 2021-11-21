@@ -2,6 +2,7 @@
 @use '../utilities/' as *;
 @use '../utilities/functions.scss' as func;
 @use '../utilities/colors.scss' as clr;
+@use '../utilities/mixins.scss' as mix;
 
 .button {
     width: 100%;
@@ -9,6 +10,10 @@
     border-radius: 1rem;
     border: none;
     font-size: func.rem(15);
+
+    @include mix.breakpoint-down(small) {
+        width: 279px;
+    }
     &:hover {
             cursor: pointer;
         }
